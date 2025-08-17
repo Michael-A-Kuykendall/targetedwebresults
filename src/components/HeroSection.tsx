@@ -31,7 +31,7 @@ const HeroSection = () => {
             </div>
             
             <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-              We're building the next generation of powerful browser extensions and development tools. 
+              We're building the next generation of powerful development tools. 
               Stay tuned for revolutionary solutions that will transform your workflow.
             </p>
             

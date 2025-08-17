@@ -5,25 +5,25 @@ import { Clock, Star, Users, Rocket } from "lucide-react";
 const ComingSoonSection = () => {
   const products = [
     {
-      title: "Developer Tools Extension",
-      description: "Advanced debugging and development utilities for modern web development.",
+      title: "ContextLite",
+      description: "Sqllite based, SMT solved baddassery. 10,000x faster than vector databases, 100% local, zero dependencies.",
       icon: <Clock className="h-8 w-8" />,
       status: "In Development",
-      eta: "Q2 2024"
+      eta: "Q4 2025"
     },
     {
-      title: "Performance Optimizer",
-      description: "Real-time website performance analysis and optimization suggestions.",
+      title: "AI Real Time Governor",
+      description: "Real-time AI governane and compliance, like magic.",
       icon: <Star className="h-8 w-8" />,
       status: "Planning",
-      eta: "Q3 2024"
+      eta: "Q1 2026"
     },
     {
-      title: "Team Collaboration Suite",
-      description: "Seamless browser-based collaboration tools for development teams.",
+      title: "Aether",
+      description: "Revolutionary voice recognition and transription; offline, powerful, cheaper and more performant than SOTA alternatives.",
       icon: <Users className="h-8 w-8" />,
       status: "Research",
-      eta: "Q4 2024"
+      eta: "Q4 2025"
     }
   ];
 
@@ -36,7 +36,7 @@ const ComingSoonSection = () => {
             Coming Soon
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground">
-            Revolutionary Extensions
+            Revolutionary Software
             <br />
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               In the Pipeline
