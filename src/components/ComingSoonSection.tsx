@@ -13,14 +13,14 @@ const ComingSoonSection = () => {
     },
     {
       title: "AI Real Time Governor",
-      description: "Real-time AI governane and compliance, like magic.",
+      description: "Real-time AI governance and compliance, like magic. Worried about GDPR? Worry NO more!",
       icon: <Star className="h-8 w-8" />,
       status: "Planning",
       eta: "Q1 2026"
     },
     {
       title: "Aether",
-      description: "Revolutionary voice recognition and transription; offline, powerful, cheaper and more performant than SOTA alternatives.",
+      description: "Revolutionary voice recognition and transcription; offline, powerful, cheaper and more performant than SOTA alternatives.",
       icon: <Users className="h-8 w-8" />,
       status: "Research",
       eta: "Q4 2025"
