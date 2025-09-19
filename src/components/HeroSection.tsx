@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Zap, Layers } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-tech.jpg";
 
 const HeroSection = () => {
@@ -24,24 +25,28 @@ const HeroSection = () => {
                 <span className="text-primary">.</span>
               </h1>
               <p className="text-xl lg:text-2xl text-muted-foreground font-medium">
-                Cutting-edge software extensions
+                Cutting-edge open source projects
                 <br />
-                <span className="text-primary font-semibold">coming soon</span>
+                <span className="text-primary font-semibold">built with Rust</span>
               </p>
             </div>
             
             <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-              We're building the next generation of powerful development tools. 
-              Stay tuned for revolutionary solutions that will transform your workflow.
+              Production-ready systems and tools that developers love. From AI infrastructure 
+              to developer utilities, explore high-performance solutions built with modern technologies.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="group">
-                Get Notified
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              <Button variant="hero" size="lg" className="group" asChild>
+                <Link to="/projects">
+                  View Projects
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </Link>
               </Button>
-              <Button variant="outline" size="lg">
-                Learn More
+              <Button variant="outline" size="lg" asChild>
+                <Link to="/about">
+                  About the Founder
+                </Link>
               </Button>
             </div>
             
