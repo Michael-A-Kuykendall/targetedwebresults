@@ -76,17 +76,18 @@ const About = () => {
                     that solve real-world problems at scale.
                   </p>
                   <p>
-                    A proud United States Air Force veteran who served as a Staff Sergeant during 
-                    the 9/11 era, Michael brings military precision and discipline to software 
-                    engineering. His unique combination of service experience and technical expertise 
-                    has shaped his approach to building reliable, secure systems.
+                    A proud United States Air Force veteran who served with distinction as a Staff Sergeant during 
+                    the 9/11 era, Michael completed his military service with an honorable discharge. 
+                    He brings military precision and discipline to software engineering, where his unique 
+                    combination of service experience and technical expertise has shaped his approach 
+                    to building reliable, secure systems.
                   </p>
                   <p>
                     A graduate of the University of Maryland College Park (2000-2003), Michael 
-                    combines formal education with practical military and industry experience. 
-                    As a devoted husband and father, he balances his passion for cutting-edge 
-                    technology with family life, bringing the same dedication to both his personal 
-                    relationships and professional projects.
+                    now operates from the Kansas City Metropolitan Area, combining formal education 
+                    with practical military and industry experience. As a devoted husband and father, 
+                    he balances his passion for cutting-edge technology with family life, bringing 
+                    the same dedication to both his personal relationships and professional projects.
                   </p>
                 </div>
               </div>
@@ -224,7 +225,20 @@ const About = () => {
                   <Badge variant="outline">Go</Badge>
                   <Badge variant="outline">TypeScript</Badge>
                   <Badge variant="outline">Python</Badge>
+                  <Badge variant="outline">PHP</Badge>
                   <Badge variant="outline">C++</Badge>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="text-lg font-semibold text-foreground">Web Development</h3>
+                <div className="space-y-2">
+                  <Badge variant="outline">Drupal</Badge>
+                  <Badge variant="outline">React</Badge>
+                  <Badge variant="outline">Node.js</Badge>
+                  <Badge variant="outline">HTML/CSS</Badge>
+                  <Badge variant="outline">JavaScript</Badge>
+                  <Badge variant="outline">REST APIs</Badge>
                 </div>
               </div>
 
@@ -246,18 +260,8 @@ const About = () => {
                   <Badge variant="outline">AWS</Badge>
                   <Badge variant="outline">Linux</Badge>
                   <Badge variant="outline">GitHub Actions</Badge>
-                  <Badge variant="outline">Tauri</Badge>
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold text-foreground">Databases</h3>
-                <div className="space-y-2">
-                  <Badge variant="outline">SQLite</Badge>
                   <Badge variant="outline">PostgreSQL</Badge>
                   <Badge variant="outline">MySQL</Badge>
-                  <Badge variant="outline">Vector DBs</Badge>
-                  <Badge variant="outline">SMT Optimization</Badge>
                 </div>
               </div>
             </div>

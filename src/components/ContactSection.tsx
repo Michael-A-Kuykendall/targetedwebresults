@@ -59,7 +59,8 @@ const ContactSection = () => {
                 </div>
                 <div className="flex-1 flex flex-col justify-start">
                   <h3 className="font-semibold text-foreground mb-2">Location</h3>
-                  <p className="text-muted-foreground">Remote-first company</p>
+                  <p className="text-muted-foreground">Kansas City Metropolitan Area</p>
+                  <p className="text-muted-foreground text-sm">Remote-first operations</p>
                 </div>
               </div>
             </div>
