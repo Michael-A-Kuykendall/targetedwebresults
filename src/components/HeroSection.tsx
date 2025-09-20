@@ -67,20 +67,47 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Hero Image */}
+          {/* Code Terminal Mockup */}
           <div className="relative lg:order-last">
             <div className="relative animate-float">
-              <img
-                src={heroImage}
-                alt="Cutting-edge software development visualization"
-                className="w-full h-auto rounded-2xl shadow-elegant"
-              />
-              <div className="absolute inset-0 bg-gradient-primary opacity-20 rounded-2xl"></div>
+              <div className="bg-gray-900 rounded-2xl shadow-elegant overflow-hidden">
+                {/* Terminal Header */}
+                <div className="bg-gray-800 px-4 py-3 flex items-center gap-2">
+                  <div className="flex gap-2">
+                    <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  </div>
+                  <div className="text-gray-400 text-sm ml-4">~/projects</div>
+                </div>
+                
+                {/* Terminal Content */}
+                <div className="p-6 font-mono text-sm space-y-2">
+                  <div className="text-green-400">$ cargo build --release</div>
+                  <div className="text-gray-400">   Compiling shimmy v0.3.0</div>
+                  <div className="text-blue-400">   Finished release [optimized] target(s)</div>
+                  <div className="text-gray-500 mt-4"></div>
+                  <div className="text-green-400">$ ./shimmy --version</div>
+                  <div className="text-white">shimmy 0.3.0 - OpenAI Compatible Inference</div>
+                  <div className="text-gray-500 mt-4"></div>
+                  <div className="text-green-400">$ git log --oneline -3</div>
+                  <div className="text-yellow-300">a1b2c3d feat: 2.4k+ stars in 12 days</div>
+                  <div className="text-yellow-300">d4e5f6g fix: performance optimizations</div>
+                  <div className="text-yellow-300">g7h8i9j docs: production deployment guide</div>
+                  <div className="text-gray-500 mt-4"></div>
+                  <div className="text-green-400 animate-pulse">$ ▊</div>
+                </div>
+              </div>
+              <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-2xl"></div>
             </div>
             
-            {/* Floating elements */}
-            <div className="absolute -top-6 -left-6 w-24 h-24 bg-accent/20 rounded-full animate-pulse"></div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/20 rounded-full animate-pulse delay-1000"></div>
+            {/* Floating code elements */}
+            <div className="absolute -top-4 -left-4 bg-blue-500/20 text-blue-400 px-3 py-1 rounded text-xs font-mono animate-pulse">
+              🦀 Rust
+            </div>
+            <div className="absolute -bottom-4 -right-4 bg-green-500/20 text-green-400 px-3 py-1 rounded text-xs font-mono animate-pulse delay-1000">
+              Production Ready
+            </div>
           </div>
         </div>
       </div>
