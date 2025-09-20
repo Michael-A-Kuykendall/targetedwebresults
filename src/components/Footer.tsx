@@ -54,7 +54,12 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-secondary-foreground">Contact</h3>
             <div className="space-y-2 text-muted-foreground">
-              <p>contact@targetedwebresults.com</p>
+              <a 
+                href="mailto:michaelallenkuykendall@gmail.com" 
+                className="block text-muted-foreground hover:text-primary transition-colors underline"
+              >
+                michaelallenkuykendall@gmail.com
+              </a>
               <p>Available for consultations</p>
             </div>
           </div>
