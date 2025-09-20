@@ -21,43 +21,43 @@ const ContactSection = () => {
               </p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-8 max-w-2xl mx-auto">
-              <div className="flex flex-col items-center gap-4 text-center">
+            <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              <div className="flex flex-col items-center gap-4 text-center min-h-[180px]">
                 <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Mail className="h-8 w-8 text-primary" />
                 </div>
-                <div>
+                <div className="flex-1 flex flex-col justify-start">
                   <h3 className="font-semibold text-foreground mb-2">Email Us</h3>
                   <a 
                     href="mailto:michaelallenkuykendall@gmail.com" 
-                    className="text-primary hover:text-primary/80 transition-colors underline"
+                    className="text-primary hover:text-primary/80 transition-colors underline break-all text-sm"
                   >
                     michaelallenkuykendall@gmail.com
                   </a>
                 </div>
               </div>
               
-              <div className="flex flex-col items-center gap-4 text-center">
+              <div className="flex flex-col items-center gap-4 text-center min-h-[180px]">
                 <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Phone className="h-8 w-8 text-primary" />
                 </div>
-                <div>
+                <div className="flex-1 flex flex-col justify-start">
                   <h3 className="font-semibold text-foreground mb-2">Call Us</h3>
                   <a 
                     href="tel:+18722626499" 
-                    className="text-primary hover:text-primary/80 transition-colors underline"
+                    className="text-primary hover:text-primary/80 transition-colors underline whitespace-nowrap"
                   >
                     (872) 262-6499
                   </a>
-                  <p className="text-muted-foreground text-sm mt-1">Available for project discussions</p>
+                  <p className="text-muted-foreground text-sm mt-2">Available for project discussions</p>
                 </div>
               </div>
               
-              <div className="flex flex-col items-center gap-4 text-center">
+              <div className="flex flex-col items-center gap-4 text-center min-h-[180px]">
                 <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
                   <MapPin className="h-8 w-8 text-primary" />
                 </div>
-                <div>
+                <div className="flex-1 flex flex-col justify-start">
                   <h3 className="font-semibold text-foreground mb-2">Location</h3>
                   <p className="text-muted-foreground">Remote-first company</p>
                 </div>
