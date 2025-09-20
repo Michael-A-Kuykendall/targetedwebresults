@@ -1,4 +1,5 @@
 import { Github, Linkedin, Twitter } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -18,13 +19,13 @@ const Footer = () => {
               transform how developers work and collaborate.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://github.com/Michael-A-Kuykendall" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Github className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/in/makuykendall/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://x.com/_MikeKuykendall" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
             </div>
@@ -34,12 +35,15 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-secondary-foreground">Quick Links</h3>
             <div className="space-y-2">
-              <a href="#home" className="block text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/" className="block text-muted-foreground hover:text-primary transition-colors">
                 Home
-              </a>
-              <a href="#products" className="block text-muted-foreground hover:text-primary transition-colors">
-                Products
-              </a>
+              </Link>
+              <Link to="/projects" className="block text-muted-foreground hover:text-primary transition-colors">
+                Projects
+              </Link>
+              <Link to="/about" className="block text-muted-foreground hover:text-primary transition-colors">
+                About
+              </Link>
               <a href="#contact" className="block text-muted-foreground hover:text-primary transition-colors">
                 Contact
               </a>

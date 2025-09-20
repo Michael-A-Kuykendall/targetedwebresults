@@ -1,36 +1,61 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const isHomePage = location.pathname === '/';
+
+  const scrollToSection = (sectionId: string) => {
+    if (isHomePage) {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Navigate to home page first, then scroll
+      window.location.href = `/#${sectionId}`;
+    }
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">T</span>
             </div>
             <span className="text-xl font-bold text-foreground">
               Targeted Web Results
             </span>
-          </div>
+          </Link>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors">
+            <button 
+              onClick={() => scrollToSection('home')} 
+              className="text-foreground hover:text-primary transition-colors"
+            >
               Home
-            </a>
-            <a href="#products" className="text-foreground hover:text-primary transition-colors">
-              Products
-            </a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors">
+            </button>
+            <Link to="/projects" className="text-foreground hover:text-primary transition-colors">
+              Projects
+            </Link>
+            <Link to="/about" className="text-foreground hover:text-primary transition-colors">
+              About
+            </Link>
+            <button 
+              onClick={() => scrollToSection('contact')} 
+              className="text-foreground hover:text-primary transition-colors"
+            >
               Contact
-            </a>
-            <Button variant="hero">
+            </button>
+            <Button variant="hero" onClick={() => scrollToSection('contact')}>
               Get Started
             </Button>
           </div>
@@ -52,28 +77,46 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border/50">
             <div className="flex flex-col space-y-4 pt-4">
-              <a 
-                href="#home" 
-                className="text-foreground hover:text-primary transition-colors"
-                onClick={() => setIsMenuOpen(false)}
+              <button 
+                onClick={() => {
+                  scrollToSection('home');
+                  setIsMenuOpen(false);
+                }} 
+                className="text-foreground hover:text-primary transition-colors text-left"
               >
                 Home
-              </a>
-              <a 
-                href="#products" 
+              </button>
+              <Link 
+                to="/projects" 
                 className="text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Products
-              </a>
-              <a 
-                href="#contact" 
+                Projects
+              </Link>
+              <Link 
+                to="/about" 
                 className="text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </Link>
+              <button 
+                onClick={() => {
+                  scrollToSection('contact');
+                  setIsMenuOpen(false);
+                }} 
+                className="text-foreground hover:text-primary transition-colors text-left"
               >
                 Contact
-              </a>
-              <Button variant="hero" className="self-start">
+              </button>
+              <Button 
+                variant="hero" 
+                className="self-start"
+                onClick={() => {
+                  scrollToSection('contact');
+                  setIsMenuOpen(false);
+                }}
+              >
                 Get Started
               </Button>
             </div>
