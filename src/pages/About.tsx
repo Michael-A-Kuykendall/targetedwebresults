@@ -82,7 +82,9 @@ const About = () => {
                     has shaped his approach to building reliable, secure systems.
                   </p>
                   <p>
-                    As a devoted husband and father, Michael balances his passion for cutting-edge 
+                    A graduate of the University of Maryland College Park (2000-2003), Michael 
+                    combines formal education with practical military and industry experience. 
+                    As a devoted husband and father, he balances his passion for cutting-edge 
                     technology with family life, bringing the same dedication to both his personal 
                     relationships and professional projects.
                   </p>
@@ -92,13 +94,17 @@ const About = () => {
               <div className="lg:col-span-1 space-y-6">
                 <Card>
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold mb-4 text-foreground">Current Focus</h3>
+                    <h3 className="text-xl font-semibold mb-4 text-foreground">Current Roles</h3>
                     <p className="text-muted-foreground mb-4">
-                      Building the next generation of Rust-based AI tooling and infrastructure. 
-                      Currently developing secret LLM toolchain innovations that will transform 
-                      how developers work with AI systems.
+                      Lead Drupal Developer at NIS (Lenexa, KS) while simultaneously building 
+                      the next generation of Rust-based AI tooling and infrastructure through 
+                      Targeted Web Results LLC.
                     </p>
                     <div className="space-y-2">
+                      <div className="flex items-center gap-2">
+                        <Code className="h-4 w-4 text-primary" />
+                        <span className="text-sm">Lead Drupal Developer at NIS</span>
+                      </div>
                       <div className="flex items-center gap-2">
                         <Zap className="h-4 w-4 text-primary" />
                         <span className="text-sm">Shimmy Console (In Development)</span>
@@ -154,10 +160,10 @@ const About = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-4 gap-6">
               <Card className="text-center">
-                <CardContent className="p-8">
-                  <div className="text-4xl font-bold text-primary mb-2">2.4k+</div>
+                <CardContent className="p-6">
+                  <div className="text-3xl font-bold text-primary mb-2">2.4k+</div>
                   <div className="text-lg font-semibold mb-2">GitHub Stars</div>
                   <div className="text-sm text-muted-foreground">
                     Shimmy gained 2,400+ stars in just 12 days
@@ -166,8 +172,18 @@ const About = () => {
               </Card>
 
               <Card className="text-center">
-                <CardContent className="p-8">
-                  <div className="text-4xl font-bold text-primary mb-2">20+</div>
+                <CardContent className="p-6">
+                  <div className="text-3xl font-bold text-primary mb-2">542</div>
+                  <div className="text-lg font-semibold mb-2">Commits This Year</div>
+                  <div className="text-sm text-muted-foreground">
+                    Active open source development with 15-day streak
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center">
+                <CardContent className="p-6">
+                  <div className="text-3xl font-bold text-primary mb-2">20+</div>
                   <div className="text-lg font-semibold mb-2">Years Experience</div>
                   <div className="text-sm text-muted-foreground">
                     Two decades of software engineering excellence
@@ -176,8 +192,8 @@ const About = () => {
               </Card>
 
               <Card className="text-center">
-                <CardContent className="p-8">
-                  <div className="text-4xl font-bold text-primary mb-2">Live</div>
+                <CardContent className="p-6">
+                  <div className="text-3xl font-bold text-primary mb-2">Live</div>
                   <div className="text-lg font-semibold mb-2">Production Systems</div>
                   <div className="text-sm text-muted-foreground">
                     ContextLite serving enterprise clients

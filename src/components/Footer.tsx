@@ -1,7 +1,29 @@
 import { Github, Linkedin, Twitter } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const isHomePage = location.pathname === '/';
+
+  const scrollToContact = () => {
+    if (isHomePage) {
+      const element = document.getElementById('contact');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate('/#contact');
+      setTimeout(() => {
+        const element = document.getElementById('contact');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  };
+
   return (
     <footer className="bg-secondary text-secondary-foreground py-16">
       <div className="container mx-auto px-6">
@@ -44,9 +66,15 @@ const Footer = () => {
               <Link to="/about" className="block text-muted-foreground hover:text-primary transition-colors">
                 About
               </Link>
-              <a href="#contact" className="block text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/media" className="block text-muted-foreground hover:text-primary transition-colors">
+                Media
+              </Link>
+              <button 
+                onClick={scrollToContact}
+                className="block text-muted-foreground hover:text-primary transition-colors text-left"
+              >
                 Contact
-              </a>
+              </button>
             </div>
           </div>
           

@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const isHomePage = location.pathname === '/';
 
@@ -16,8 +17,15 @@ const Header = () => {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
-      // Navigate to home page first, then scroll
-      window.location.href = `/#${sectionId}`;
+      // Navigate to home page with hash
+      navigate(`/#${sectionId}`);
+      // Small delay to ensure page loads before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
     }
   };
 
@@ -48,6 +56,9 @@ const Header = () => {
             </Link>
             <Link to="/about" className="text-foreground hover:text-primary transition-colors">
               About
+            </Link>
+            <Link to="/media" className="text-foreground hover:text-primary transition-colors">
+              Media
             </Link>
             <button 
               onClick={() => scrollToSection('contact')} 
@@ -99,6 +110,13 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
+              </Link>
+              <Link 
+                to="/media" 
+                className="text-foreground hover:text-primary transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Media
               </Link>
               <button 
                 onClick={() => {

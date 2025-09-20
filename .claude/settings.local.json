@@ -10,7 +10,9 @@
       "Bash(mv:*)",
       "Bash(rm:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.linkedin.com)"
     ],
     "deny": [],
     "ask": []
