@@ -17,7 +17,7 @@ const ContactSection = () => {
               </h2>
               <p className="text-xl text-muted-foreground">
                 Ready to discuss your next project or interested in our upcoming extensions? 
-                We'd love to hear from you.
+                Call us at <a href="tel:+18722626499" className="text-primary hover:text-primary/80 underline">(872) 262-6499</a> or email us below.
               </p>
             </div>
             
@@ -43,7 +43,13 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-2">Call Us</h3>
-                  <p className="text-muted-foreground">Available for project discussions</p>
+                  <a 
+                    href="tel:+18722626499" 
+                    className="text-primary hover:text-primary/80 transition-colors underline"
+                  >
+                    (872) 262-6499
+                  </a>
+                  <p className="text-muted-foreground text-sm mt-1">Available for project discussions</p>
                 </div>
               </div>
               

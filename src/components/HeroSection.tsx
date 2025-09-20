@@ -50,25 +50,19 @@ const HeroSection = () => {
               </Button>
             </div>
             
-            {/* Features preview */}
+            {/* Key Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border">
               <div className="text-center space-y-2">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto">
-                  <Code className="h-6 w-6 text-primary" />
-                </div>
-                <p className="text-sm font-medium">Extensions</p>
+                <div className="text-2xl font-bold text-primary">2.4k+</div>
+                <p className="text-sm font-medium text-muted-foreground">GitHub Stars</p>
               </div>
               <div className="text-center space-y-2">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto">
-                  <Zap className="h-6 w-6 text-primary" />
-                </div>
-                <p className="text-sm font-medium">Performance</p>
+                <div className="text-2xl font-bold text-primary">Live</div>
+                <p className="text-sm font-medium text-muted-foreground">Production Systems</p>
               </div>
               <div className="text-center space-y-2">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto">
-                  <Layers className="h-6 w-6 text-primary" />
-                </div>
-                <p className="text-sm font-medium">Integration</p>
+                <div className="text-2xl font-bold text-primary">20+</div>
+                <p className="text-sm font-medium text-muted-foreground">Years Experience</p>
               </div>
             </div>
           </div>

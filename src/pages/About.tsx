@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Award, Code, Zap, Users, Mail, Linkedin, Twitter } from "lucide-react";
+import { ExternalLink, Award, Code, Zap, Users, Mail, Linkedin, Twitter, Phone } from "lucide-react";
 
 const About = () => {
   return (
@@ -11,8 +11,12 @@ const About = () => {
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-20 lg:py-32 bg-gradient-subtle">
-          <div className="container mx-auto px-6">
+        <section className="relative py-20 lg:py-32 bg-gradient-subtle overflow-hidden">
+          {/* Background decoration */}
+          <div className="absolute inset-0 bg-gradient-hero opacity-10"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
+          <div className="relative container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center space-y-8">
               <div className="space-y-4">
                 <h1 className="text-5xl lg:text-6xl font-bold text-foreground">
@@ -47,8 +51,21 @@ const About = () => {
         {/* Bio Section */}
         <section className="py-20 bg-background">
           <div className="container mx-auto px-6">
-            <div className="grid lg:grid-cols-2 gap-16 items-start">
-              <div className="space-y-6">
+            <div className="grid lg:grid-cols-3 gap-16 items-start">
+              {/* Profile Picture */}
+              <div className="lg:col-span-1 flex justify-center">
+                <div className="relative">
+                  <img
+                    src="https://github.com/Michael-A-Kuykendall.png"
+                    alt="Michael A. Kuykendall"
+                    className="w-80 h-80 rounded-2xl object-cover shadow-elegant"
+                  />
+                  <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-2xl"></div>
+                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/20 rounded-full animate-pulse"></div>
+                </div>
+              </div>
+              
+              <div className="lg:col-span-1 space-y-6">
                 <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
                   Senior Full Stack Software Engineer
                 </h2>
@@ -72,7 +89,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="space-y-6">
+              <div className="lg:col-span-1 space-y-6">
                 <Card>
                   <CardContent className="p-6">
                     <h3 className="text-xl font-semibold mb-4 text-foreground">Current Focus</h3>
@@ -123,8 +140,11 @@ const About = () => {
         </section>
 
         {/* Achievements Section */}
-        <section className="py-20 bg-gradient-subtle">
-          <div className="container mx-auto px-6">
+        <section className="relative py-20 bg-gradient-subtle overflow-hidden">
+          {/* Background decoration */}
+          <div className="absolute inset-0 bg-gradient-hero opacity-5"></div>
+          <div className="absolute top-10 right-10 w-64 h-64 bg-accent/10 rounded-full blur-3xl"></div>
+          <div className="relative container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
                 Notable Achievements
@@ -229,8 +249,11 @@ const About = () => {
         </section>
 
         {/* Connect Section */}
-        <section className="py-20 bg-gradient-subtle">
-          <div className="container mx-auto px-6">
+        <section className="relative py-20 bg-gradient-subtle overflow-hidden">
+          {/* Background decoration */}
+          <div className="absolute inset-0 bg-gradient-hero opacity-10"></div>
+          <div className="absolute bottom-10 left-10 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
+          <div className="relative container mx-auto px-6">
             <div className="text-center space-y-8">
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
                 Let's Connect
@@ -246,6 +269,13 @@ const About = () => {
                     <Mail className="mr-2 h-5 w-5" />
                     Email
                     <ExternalLink className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </a>
+                </Button>
+                
+                <Button variant="hero" size="lg" className="group" asChild>
+                  <a href="tel:+18722626499">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Call (872) 262-6499
                   </a>
                 </Button>
                 

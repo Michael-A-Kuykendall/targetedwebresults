@@ -60,6 +60,12 @@ const Footer = () => {
               >
                 michaelallenkuykendall@gmail.com
               </a>
+              <a 
+                href="tel:+18722626499" 
+                className="block text-muted-foreground hover:text-primary transition-colors underline"
+              >
+                (872) 262-6499
+              </a>
               <p>Available for consultations</p>
             </div>
           </div>

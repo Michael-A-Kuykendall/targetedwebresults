@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Star, GitFork, Github, Eye, Zap, Database, Camera, Leaf } from "lucide-react";
+import { ExternalLink, Star, GitFork, Github, Eye, Zap, Database, Camera, Leaf, Phone, Mail } from "lucide-react";
 
 const Projects = () => {
   const featuredProjects = [
@@ -125,8 +125,12 @@ const Projects = () => {
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-20 lg:py-32 bg-gradient-subtle">
-          <div className="container mx-auto px-6">
+        <section className="relative py-20 lg:py-32 bg-gradient-subtle overflow-hidden">
+          {/* Background decoration */}
+          <div className="absolute inset-0 bg-gradient-hero opacity-10"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
+          <div className="relative container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center space-y-8">
               <div className="space-y-4">
                 <h1 className="text-5xl lg:text-6xl font-bold text-foreground">
@@ -248,8 +252,11 @@ const Projects = () => {
         </section>
 
         {/* Other Projects */}
-        <section className="py-20 bg-gradient-subtle">
-          <div className="container mx-auto px-6">
+        <section className="relative py-20 bg-gradient-subtle overflow-hidden">
+          {/* Background decoration */}
+          <div className="absolute inset-0 bg-gradient-hero opacity-5"></div>
+          <div className="absolute top-10 right-10 w-64 h-64 bg-accent/10 rounded-full blur-3xl"></div>
+          <div className="relative container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
                 Other Projects
@@ -287,8 +294,10 @@ const Projects = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-6">
+        <section className="relative py-20 bg-background overflow-hidden">
+          {/* Background decoration */}
+          <div className="absolute bottom-10 left-10 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
+          <div className="relative container mx-auto px-6">
             <div className="text-center space-y-8">
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
                 Interested in Collaborating?
@@ -300,9 +309,16 @@ const Projects = () => {
               
               <div className="flex flex-wrap justify-center gap-4">
                 <Button variant="hero" size="lg" className="group" asChild>
-                  <a href="/contact">
-                    Get in Touch
-                    <ExternalLink className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  <a href="tel:+18722626499">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Call (872) 262-6499
+                  </a>
+                </Button>
+                
+                <Button variant="hero" size="lg" className="group" asChild>
+                  <a href="mailto:michaelallenkuykendall@gmail.com">
+                    <Mail className="mr-2 h-5 w-5" />
+                    Email Us
                   </a>
                 </Button>
                 
