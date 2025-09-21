@@ -18,7 +18,10 @@
       "WebFetch(domain:targetedwebresults.com)",
       "Bash(brew install:*)",
       "Bash(gh issue:*)",
-      "WebFetch(domain:rustchain.dev)"
+      "WebFetch(domain:rustchain.dev)",
+      "WebFetch(domain:ipenewsletter.substack.com)",
+      "WebSearch",
+      "WebFetch(domain:news.ycombinator.com)"
     ],
     "deny": [],
     "ask": []

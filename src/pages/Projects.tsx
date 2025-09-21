@@ -56,7 +56,7 @@ const Projects = () => {
       stats: {
         stars: 22,
         forks: 4,
-        language: "HTML"
+        language: "Rust"
       },
       tags: ["Rust", "Tauri", "Professional Controls", "Cross-Platform", "Production Ready", "63 Tests"],
       status: "v0.3.0",
@@ -119,25 +119,29 @@ const Projects = () => {
       title: "Tinto",
       description: "Workspace Tint: Minimal deterministic workspace color extension for VS Code",
       language: "TypeScript",
-      githubUrl: "https://github.com/Michael-A-Kuykendall/tinto"
+      githubUrl: "https://github.com/Michael-A-Kuykendall/tinto",
+      note: "Original project"
     },
     {
       title: "Punch Community",
       description: "The fastest code analysis tool built with Rust - Community Edition",
       language: "Go",
-      githubUrl: "https://github.com/Michael-A-Kuykendall/punch-community"
+      githubUrl: "https://github.com/Michael-A-Kuykendall/punch-community",
+      note: "Community fork of proprietary tool"
     },
     {
       title: "Scoop Bucket",
       description: "Scoop bucket for ContextLite packages",
       language: "PowerShell",
-      githubUrl: "https://github.com/Michael-A-Kuykendall/scoop-bucket"
+      githubUrl: "https://github.com/Michael-A-Kuykendall/scoop-bucket",
+      note: "Package distribution"
     },
     {
       title: "Homebrew Tap",
       description: "Homebrew tap for ContextLite packages",
       language: "Ruby",
-      githubUrl: "https://github.com/Michael-A-Kuykendall/homebrew-tap"
+      githubUrl: "https://github.com/Michael-A-Kuykendall/homebrew-tap",
+      note: "Package distribution"
     }
   ];
 
@@ -302,6 +306,11 @@ const Projects = () => {
                     <p className="text-sm text-muted-foreground">
                       {project.description}
                     </p>
+                    {project.note && (
+                      <Badge variant="secondary" className="text-xs">
+                        {project.note}
+                      </Badge>
+                    )}
                     <Button variant="outline" size="sm" className="w-full group" asChild>
                       <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                         <Github className="mr-2 h-4 w-4" />

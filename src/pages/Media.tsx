@@ -8,6 +8,16 @@ import { ExternalLink, Calendar, MessageSquare, TrendingUp, Users } from "lucide
 const Media = () => {
   const pressItems = [
     {
+      title: "What Are OpenAI, Microsoft & Stripe Building Beyond AI?",
+      platform: "In Plain English Newsletter",
+      date: "September 9, 2025",
+      description: "Featured coverage discussing the AI infrastructure landscape and emerging projects in the enterprise AI space, highlighting key developments in the industry.",
+      url: "https://ipenewsletter.substack.com/p/the-strange-new-side-hustles-of-openai",
+      type: "Newsletter",
+      engagement: "Industry Analysis",
+      color: "from-blue-500 to-cyan-500"
+    },
+    {
       title: "Shimmy: The Rust-based OpenAI Alternative That Hit 2.4k Stars in 12 Days",
       platform: "Hacker News",
       date: "2024",

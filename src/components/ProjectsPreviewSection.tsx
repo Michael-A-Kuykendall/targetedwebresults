@@ -20,6 +20,19 @@ const ProjectsPreviewSection = () => {
       githubUrl: "https://github.com/Michael-A-Kuykendall/shimmy"
     },
     {
+      title: "Rustchain Community",
+      description: "Production-ready AI agent framework. 97% faster than Python with DAG-based workflows.",
+      icon: <Zap className="h-6 w-6" />,
+      stats: {
+        stars: 12,
+        forks: 3,
+        language: "Rust"
+      },
+      status: "Production Ready",
+      color: "from-amber-500 to-orange-500",
+      githubUrl: "https://github.com/Michael-A-Kuykendall/rustchain-community"
+    },
+    {
       title: "ContextLite",
       description: "27,000x faster than vector databases. Live production system serving enterprise clients.",
       icon: <Database className="h-6 w-6" />,
@@ -31,19 +44,6 @@ const ProjectsPreviewSection = () => {
       status: "Live Production",
       color: "from-blue-500 to-cyan-500",
       githubUrl: "https://github.com/Michael-A-Kuykendall/contextlite"
-    },
-    {
-      title: "CrabCamera",
-      description: "Professional desktop camera studio for Tauri. Complete v0.3.0 with 63 comprehensive tests.",
-      icon: <Camera className="h-6 w-6" />,
-      stats: {
-        stars: 22,
-        forks: 4,
-        language: "HTML"
-      },
-      status: "v0.3.0",
-      color: "from-purple-500 to-pink-500",
-      githubUrl: "https://github.com/Michael-A-Kuykendall/crabcamera"
     }
   ];
 
