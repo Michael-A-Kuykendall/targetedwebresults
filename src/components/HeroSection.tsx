@@ -16,7 +16,7 @@ const HeroSection = () => {
           {/* Content */}
           <div className="space-y-8 animate-fade-in-up">
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-7xl font-bold text-foreground leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-foreground leading-tight">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                   Targeted
                 </span>
@@ -24,14 +24,14 @@ const HeroSection = () => {
                 Web Results
                 <span className="text-primary">.</span>
               </h1>
-              <p className="text-xl lg:text-2xl text-muted-foreground font-medium">
+              <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground font-medium">
                 Cutting-edge open source projects
                 <br />
                 <span className="text-primary font-semibold">built with Rust</span>
               </p>
             </div>
             
-            <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-xl leading-relaxed">
               Production-ready systems and tools that developers love. From AI infrastructure 
               to developer utilities, explore high-performance solutions built with modern technologies.
             </p>
@@ -51,18 +51,18 @@ const HeroSection = () => {
             </div>
             
             {/* Key Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border">
+            <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-8 border-t border-border">
               <div className="text-center space-y-2">
-                <div className="text-2xl font-bold text-primary">2.4k+</div>
-                <p className="text-sm font-medium text-muted-foreground">GitHub Stars</p>
+                <div className="text-xl sm:text-2xl font-bold text-primary">2.4k+</div>
+                <p className="text-xs sm:text-sm font-medium text-muted-foreground">GitHub Stars</p>
               </div>
               <div className="text-center space-y-2">
-                <div className="text-2xl font-bold text-primary">Live</div>
-                <p className="text-sm font-medium text-muted-foreground">Production Systems</p>
+                <div className="text-xl sm:text-2xl font-bold text-primary">Live</div>
+                <p className="text-xs sm:text-sm font-medium text-muted-foreground">Production Systems</p>
               </div>
               <div className="text-center space-y-2">
-                <div className="text-2xl font-bold text-primary">20+</div>
-                <p className="text-sm font-medium text-muted-foreground">Years Experience</p>
+                <div className="text-xl sm:text-2xl font-bold text-primary">20+</div>
+                <p className="text-xs sm:text-sm font-medium text-muted-foreground">Years Experience</p>
               </div>
             </div>
           </div>

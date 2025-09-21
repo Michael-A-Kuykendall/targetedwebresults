@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Star, GitFork, Github, Eye, Zap, Database, Camera, Leaf, Phone, Mail } from "lucide-react";
+import { ExternalLink, Star, GitFork, Github, Zap, Database, Camera, Leaf, Phone, Mail } from "lucide-react";
 
 const Projects = () => {
   const featuredProjects = [
@@ -90,6 +90,27 @@ const Projects = () => {
         "Botanical research platform"
       ],
       color: "from-green-500 to-emerald-500"
+    },
+    {
+      title: "Rustchain Community",
+      description: "Production-ready AI agent framework built in Rust delivering 10-100x performance improvements. DAG-based mission engine with universal workflow transpilation and enterprise compliance.",
+      icon: <Zap className="h-8 w-8" />,
+      stats: {
+        stars: 12,
+        forks: 3,
+        language: "Rust"
+      },
+      tags: ["Rust", "AI Agents", "Workflow Engine", "Enterprise", "97% Faster"],
+      status: "Production Ready",
+      githubUrl: "https://github.com/Michael-A-Kuykendall/rustchain-community",
+      highlights: [
+        "97% faster than Python frameworks",
+        "DAG-based mission engine with 12+ step types",
+        "Universal workflow transpilation",
+        "Built-in compliance validation (SOX, GDPR, HIPAA)",
+        "748 comprehensive tests with zero error rate"
+      ],
+      color: "from-amber-500 to-orange-500"
     }
   ];
 
@@ -133,13 +154,13 @@ const Projects = () => {
           <div className="relative container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center space-y-8">
               <div className="space-y-4">
-                <h1 className="text-5xl lg:text-6xl font-bold text-foreground">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground">
                   Featured{" "}
                   <span className="bg-gradient-primary bg-clip-text text-transparent">
                     Projects
                   </span>
                 </h1>
-                <p className="text-xl lg:text-2xl text-muted-foreground">
+                <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground">
                   Open source projects making a real-world impact
                 </p>
               </div>
@@ -220,13 +241,15 @@ const Projects = () => {
                                 <ExternalLink className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                               </a>
                             </Button>
-                            <Button variant="outline" className="group" asChild>
-                              <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                                <Eye className="mr-2 h-4 w-4" />
-                                Live Demo
-                                <ExternalLink className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                              </a>
-                            </Button>
+                            {project.title === "Rustchain Community" && (
+                              <Button variant="outline" className="group" asChild>
+                                <a href="/rustchain">
+                                  <ExternalLink className="mr-2 h-4 w-4" />
+                                  Deep Dive
+                                  <ExternalLink className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                                </a>
+                              </Button>
+                            )}
                           </div>
                         </div>
 
@@ -258,10 +281,10 @@ const Projects = () => {
           <div className="absolute top-10 right-10 w-64 h-64 bg-accent/10 rounded-full blur-3xl"></div>
           <div className="relative container mx-auto px-6">
             <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
                 Other Projects
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-lg sm:text-xl text-muted-foreground">
                 Additional tools and utilities
               </p>
             </div>
@@ -299,10 +322,10 @@ const Projects = () => {
           <div className="absolute bottom-10 left-10 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
           <div className="relative container mx-auto px-6">
             <div className="text-center space-y-8">
-              <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
                 Interested in Collaborating?
               </h2>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
                 These projects represent just a fraction of what's possible. Let's build 
                 something amazing together.
               </p>

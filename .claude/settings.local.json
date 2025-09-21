@@ -12,7 +12,13 @@
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "WebFetch(domain:github.com)",
-      "WebFetch(domain:www.linkedin.com)"
+      "WebFetch(domain:www.linkedin.com)",
+      "Bash(gh issue list:*)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:targetedwebresults.com)",
+      "Bash(brew install:*)",
+      "Bash(gh issue:*)",
+      "WebFetch(domain:rustchain.dev)"
     ],
     "deny": [],
     "ask": []
