@@ -42,11 +42,11 @@ const Header = () => {
               Targeted Web Results
             </span>
           </Link>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection('home')} 
+            <button
+              onClick={() => scrollToSection('home')}
               className="text-foreground hover:text-primary transition-colors"
             >
               Home
@@ -54,14 +54,22 @@ const Header = () => {
             <Link to="/projects" className="text-foreground hover:text-primary transition-colors">
               Projects
             </Link>
+            <a 
+              href="https://michael-a-kuykendall.github.io/shimmy-vision-builder/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Shimmy Vision
+            </a>
             <Link to="/about" className="text-foreground hover:text-primary transition-colors">
               About
             </Link>
             <Link to="/media" className="text-foreground hover:text-primary transition-colors">
               Media
             </Link>
-            <button 
-              onClick={() => scrollToSection('contact')} 
+            <button
+              onClick={() => scrollToSection('contact')}
               className="text-foreground hover:text-primary transition-colors"
             >
               Contact
@@ -70,7 +78,7 @@ const Header = () => {
               Get Started
             </Button>
           </div>
-          
+
           {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2"
@@ -83,52 +91,61 @@ const Header = () => {
             )}
           </button>
         </div>
-        
+
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border/50">
             <div className="flex flex-col space-y-4 pt-4">
-              <button 
+              <button
                 onClick={() => {
                   scrollToSection('home');
                   setIsMenuOpen(false);
-                }} 
+                }}
                 className="text-foreground hover:text-primary transition-colors text-left"
               >
                 Home
               </button>
-              <Link 
-                to="/projects" 
+              <Link
+                to="/projects"
                 className="text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Projects
               </Link>
-              <Link 
-                to="/about" 
+              <a
+                href="https://michael-a-kuykendall.github.io/shimmy-vision-builder/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-primary transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Shimmy Vision
+              </a>
+              <Link
+                to="/about"
                 className="text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
-              <Link 
-                to="/media" 
+              <Link
+                to="/media"
                 className="text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Media
               </Link>
-              <button 
+              <button
                 onClick={() => {
                   scrollToSection('contact');
                   setIsMenuOpen(false);
-                }} 
+                }}
                 className="text-foreground hover:text-primary transition-colors text-left"
               >
                 Contact
               </button>
-              <Button 
-                variant="hero" 
+              <Button
+                variant="hero"
                 className="self-start"
                 onClick={() => {
                   scrollToSection('contact');
