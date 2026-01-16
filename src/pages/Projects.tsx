@@ -12,7 +12,7 @@ const Projects = () => {
       description: "The Privacy-First OpenAI Alternative - 5.1MB single-binary Rust inference server. Complete, live, and the Ollama alternative developers actually want. FREE forever, no asterisks.",
       icon: <Zap className="h-8 w-8" />,
       stats: {
-        stars: 3500,
+        stars: 3534,
         forks: 262,
         language: "Rust"
       },
@@ -54,8 +54,8 @@ const Projects = () => {
       description: "Professional Desktop Camera Studio - Complete v0.3.0 Tauri plugin with MediaFoundation controls, WebRTC preview, auto-capture quality validation. The invisible infrastructure that makes camera apps just work.",
       icon: <Camera className="h-8 w-8" />,
       stats: {
-        stars: 22,
-        forks: 4,
+        stars: 134,
+        forks: 12,
         language: "Rust"
       },
       tags: ["Rust", "Tauri", "Professional Controls", "Cross-Platform", "Production Ready", "63 Tests"],
@@ -69,6 +69,69 @@ const Projects = () => {
         "63 comprehensive tests"
       ],
       color: "from-purple-500 to-pink-500"
+    },
+    {
+      title: "Muxide",
+      description: "Pure Rust MP4 muxer — zero deps, no FFmpeg. Feed it encoded frames, get a standards-compliant MP4. H.264, H.265, AV1, AAC, Opus.",
+      icon: <Database className="h-8 w-8" />,
+      stats: {
+        stars: 48,
+        forks: 5,
+        language: "Rust"
+      },
+      tags: ["Rust", "MP4", "Muxer", "Video", "Zero Dependencies", "Standards Compliant"],
+      status: "Production",
+      githubUrl: "https://github.com/Michael-A-Kuykendall/muxide",
+      highlights: [
+        "Pure Rust implementation",
+        "Zero external dependencies",
+        "Standards-compliant MP4 output",
+        "Supports H.264, H.265, AV1, AAC, Opus",
+        "High-performance streaming muxing"
+      ],
+      color: "from-green-500 to-teal-500"
+    },
+    {
+      title: "Shimmytok",
+      description: "Pure Rust tokenizer for GGUF models - llama.cpp compatible. High-performance tokenization for AI inference pipelines.",
+      icon: <Zap className="h-8 w-8" />,
+      stats: {
+        stars: 10,
+        forks: 2,
+        language: "Rust"
+      },
+      tags: ["Rust", "Tokenizer", "GGUF", "Llama.cpp", "AI Inference"],
+      status: "Production",
+      githubUrl: "https://github.com/Michael-A-Kuykendall/shimmytok",
+      highlights: [
+        "Pure Rust implementation",
+        "llama.cpp compatible tokenization",
+        "High-performance for AI pipelines",
+        "GGUF model support",
+        "Memory-safe and efficient"
+      ],
+      color: "from-blue-500 to-indigo-500"
+    },
+    {
+      title: "Auxide",
+      description: "🎤Auxide🎧 Audio graph kernel with provable RT-safety and deterministic execution. Foundation for next-generation audio applications.",
+      icon: <Zap className="h-8 w-8" />,
+      stats: {
+        stars: 9,
+        forks: 1,
+        language: "Rust"
+      },
+      tags: ["Rust", "Audio", "Real-Time", "DSP", "Graph-Based", "RT-Safe"],
+      status: "Production",
+      githubUrl: "https://github.com/Michael-A-Kuykendall/auxide",
+      highlights: [
+        "Provable RT-safety guarantees",
+        "Deterministic audio execution",
+        "Graph-based audio processing",
+        "Extensible plugin architecture",
+        "Zero allocations in hot paths"
+      ],
+      color: "from-indigo-500 to-purple-500"
     },
     {
       title: "Botanica",

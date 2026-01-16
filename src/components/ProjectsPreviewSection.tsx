@@ -11,7 +11,7 @@ const ProjectsPreviewSection = () => {
       description: "Privacy-first OpenAI alternative. 5.1MB Rust inference server with 3.5k+ stars.",
       icon: <Zap className="h-6 w-6" />,
       stats: {
-        stars: 3500,
+        stars: 3534,
         forks: 262,
         language: "Rust"
       },
