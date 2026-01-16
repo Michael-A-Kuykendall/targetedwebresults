@@ -33,7 +33,7 @@ const Projects = () => {
       description: "Database Freedom Platform - Live and serving retail redistributors. 27,000x faster than vector databases with SMT-powered mathematical search optimization across any database type.",
       icon: <Database className="h-8 w-8" />,
       stats: {
-        stars: 4,
+        stars: 14,
         forks: 2,
         language: "Go"
       },
@@ -180,7 +180,7 @@ const Projects = () => {
       description: "Real-time-safe, deterministic audio graph kernel for building reliable audio tools, DSP chains, and synthesis engines with a focus on correctness, performance, and simplicity.",
       icon: <Zap className="h-8 w-8" />,
       stats: {
-        stars: 3,
+        stars: 10,
         forks: 1,
         language: "Rust"
       },
