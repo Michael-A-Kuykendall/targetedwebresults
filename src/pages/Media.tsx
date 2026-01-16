@@ -18,7 +18,7 @@ const Media = () => {
       color: "from-blue-500 to-cyan-500"
     },
     {
-      title: "Shimmy: The Rust-based OpenAI Alternative That Hit 2.4k Stars in 12 Days",
+      title: "Shimmy: The Rust-based OpenAI Alternative That Hit 3.5k+ Stars",
       platform: "Hacker News",
       date: "2024",
       description: "Michael's Shimmy project gained massive traction on Hacker News, becoming a front-page story and attracting thousands of developers seeking a privacy-first AI inference solution.",

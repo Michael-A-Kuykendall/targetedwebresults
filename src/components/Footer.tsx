@@ -50,6 +50,9 @@ const Footer = () => {
               <a href="https://x.com/_MikeKuykendall" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
+              <a href="https://bsky.app/profile/michaelakuykendall.bsky.social" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Twitter className="h-5 w-5" />
+              </a>
             </div>
           </div>
           
@@ -88,13 +91,6 @@ const Footer = () => {
               >
                 michaelallenkuykendall@gmail.com
               </a>
-              <a 
-                href="tel:+18722626499" 
-                className="block text-muted-foreground hover:text-primary transition-colors underline"
-              >
-                (872) 262-6499
-              </a>
-              <p>Available for consultations</p>
             </div>
           </div>
         </div>

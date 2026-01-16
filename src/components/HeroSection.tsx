@@ -53,7 +53,7 @@ const HeroSection = () => {
             {/* Key Stats */}
             <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-8 border-t border-border">
               <div className="text-center space-y-2">
-                <div className="text-xl sm:text-2xl font-bold text-primary">2.4k+</div>
+                <div className="text-xl sm:text-2xl font-bold text-primary">3.5k+</div>
                 <p className="text-xs sm:text-sm font-medium text-muted-foreground">GitHub Stars</p>
               </div>
               <div className="text-center space-y-2">
@@ -91,7 +91,7 @@ const HeroSection = () => {
                   <div className="text-white">shimmy 0.3.0 - OpenAI Compatible Inference</div>
                   <div className="text-gray-500 mt-4"></div>
                   <div className="text-green-400">$ git log --oneline -3</div>
-                  <div className="text-yellow-300">a1b2c3d feat: 2.4k+ stars in 12 days</div>
+                  <div className="text-yellow-300">a1b2c3d feat: 3.5k+ stars milestone</div>
                   <div className="text-yellow-300">d4e5f6g fix: performance optimizations</div>
                   <div className="text-yellow-300">g7h8i9j docs: production deployment guide</div>
                   <div className="text-gray-500 mt-4"></div>

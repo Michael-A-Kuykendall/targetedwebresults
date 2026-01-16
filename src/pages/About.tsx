@@ -164,10 +164,10 @@ const About = () => {
             <div className="grid md:grid-cols-4 gap-6">
               <Card className="text-center">
                 <CardContent className="p-6">
-                  <div className="text-3xl font-bold text-primary mb-2">2.4k+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">3.5k+</div>
                   <div className="text-lg font-semibold mb-2">GitHub Stars</div>
                   <div className="text-sm text-muted-foreground">
-                    Shimmy gained 2,400+ stars in just 12 days
+                    Shimmy has attracted 3,500+ stars from developers worldwide
                   </div>
                 </CardContent>
               </Card>
@@ -289,13 +289,6 @@ const About = () => {
                     <Mail className="mr-2 h-5 w-5" />
                     Email
                     <ExternalLink className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </a>
-                </Button>
-                
-                <Button variant="hero" size="lg" className="group" asChild>
-                  <a href="tel:+18722626499">
-                    <Phone className="mr-2 h-5 w-5" />
-                    Call (872) 262-6499
                   </a>
                 </Button>
                 

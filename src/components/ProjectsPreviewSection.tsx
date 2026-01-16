@@ -8,11 +8,11 @@ const ProjectsPreviewSection = () => {
   const featuredProjects = [
     {
       title: "Shimmy",
-      description: "Privacy-first OpenAI alternative. 5.1MB Rust inference server with 2.4k+ stars in 12 days.",
+      description: "Privacy-first OpenAI alternative. 5.1MB Rust inference server with 3.5k+ stars.",
       icon: <Zap className="h-6 w-6" />,
       stats: {
-        stars: 2434,
-        forks: 165,
+        stars: 3500,
+        forks: 262,
         language: "Rust"
       },
       status: "Production",
@@ -33,17 +33,17 @@ const ProjectsPreviewSection = () => {
       githubUrl: "https://github.com/Michael-A-Kuykendall/rustchain-community"
     },
     {
-      title: "ContextLite",
-      description: "27,000x faster than vector databases. Live production system serving enterprise clients.",
-      icon: <Database className="h-6 w-6" />,
+      title: "Auxide",
+      description: "Real-time-safe audio graph kernel. Zero allocations in processing paths, deterministic output.",
+      icon: <Zap className="h-6 w-6" />,
       stats: {
-        stars: 4,
-        forks: 2,
-        language: "Go"
+        stars: 3,
+        forks: 1,
+        language: "Rust"
       },
-      status: "Live Production",
-      color: "from-blue-500 to-cyan-500",
-      githubUrl: "https://github.com/Michael-A-Kuykendall/contextlite"
+      status: "Production Ready",
+      color: "from-purple-500 to-indigo-500",
+      githubUrl: "https://github.com/Michael-A-Kuykendall/auxide"
     }
   ];
 

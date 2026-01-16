@@ -1,73 +1,51 @@
-# Welcome to your Lovable project
+# Targeted Web Results LLC
 
-## Project info
+Welcome to the official repository for Targeted Web Results LLC, a software development company specializing in high-performance Rust applications, AI infrastructure, and real-time systems.
 
-**URL**: https://lovable.dev/projects/60c93d8b-aa38-4fd3-88aa-35cf831f9ca1
+## About Us
 
-## How can I edit this code?
+Targeted Web Results LLC is led by Michael A. Kuykendall, a Senior Full Stack Software Engineer with 20+ years of experience in systems engineering, AI infrastructure, and Rust development. We're passionate about building the next generation of safe, fast, and concurrent software.
 
-There are several ways of editing your application.
+## Current Projects
 
-**Use Lovable**
+### 🚀 [Shimmy](https://github.com/Michael-A-Kuykendall/shimmy)
+**Privacy-First OpenAI Alternative** - 5.1MB single-binary Rust inference server with 3,000+ stars. Complete Ollama alternative.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/60c93d8b-aa38-4fd3-88aa-35cf831f9ca1) and start prompting.
+### 🎵 [Auxide](https://github.com/Michael-A-Kuykendall/auxide)
+**Real-Time Audio Kernel** - v0.2.0 with 50+ DSP nodes for professional audio processing.
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🔊 [Auxide-DSP](https://github.com/Michael-A-Kuykendall/auxide-dsp)
+**DSP Utilities Library** - High-performance DSP building blocks for real-time audio applications.
 
-**Use your preferred IDE**
+### 📸 [CrabCamera](https://github.com/Michael-A-Kuykendall/crabcamera)
+**Professional Desktop Camera Studio** - Complete Tauri plugin for camera applications.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 🔍 [ContextLite](https://github.com/Michael-A-Kuykendall/contextlite)
+**Database Freedom Platform** - Live optimization platform serving enterprise clients.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Technology Stack
 
-Follow these steps:
+- **Rust** - Primary language for performance-critical applications
+- **Go** - Cloud infrastructure and services
+- **TypeScript/React** - Modern web applications
+- **AI/ML** - Inference servers, optimization platforms
+- **Real-Time Systems** - Audio processing, live databases
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Services
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- Custom Rust development
+- AI infrastructure consulting
+- Real-time system design
+- Performance optimization
+- Open source contributions
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Contact
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- **Website**: [targetedwebresults.com](https://targetedwebresults.com)
+- **Email**: michaelallenkuykendall@gmail.com
+- **LinkedIn**: [linkedin.com/in/makuykendall](https://www.linkedin.com/in/makuykendall)
+- **GitHub**: [github.com/Michael-A-Kuykendall](https://github.com/Michael-A-Kuykendall)
 
-**Edit a file directly in GitHub**
+## This Repository
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/60c93d8b-aa38-4fd3-88aa-35cf831f9ca1) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This repository contains the source code for the Targeted Web Results LLC website, built with modern web technologies for fast, responsive user experiences.

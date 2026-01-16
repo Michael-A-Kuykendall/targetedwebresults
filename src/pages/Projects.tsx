@@ -12,15 +12,15 @@ const Projects = () => {
       description: "The Privacy-First OpenAI Alternative - 5.1MB single-binary Rust inference server. Complete, live, and the Ollama alternative developers actually want. FREE forever, no asterisks.",
       icon: <Zap className="h-8 w-8" />,
       stats: {
-        stars: 2434,
-        forks: 165,
+        stars: 3500,
+        forks: 262,
         language: "Rust"
       },
       tags: ["Rust", "OpenAI Compatible", "GGUF", "Zero-Config", "5MB Binary", "FREE Forever"],
       status: "Production",
       githubUrl: "https://github.com/Michael-A-Kuykendall/shimmy",
       highlights: [
-        "2.4k stars in 12 days",
+        "3.5k+ stars",
         "Featured on Hacker News front page",
         "Single 5MB binary",
         "OpenAI API compatible",
@@ -111,6 +111,46 @@ const Projects = () => {
         "748 comprehensive tests with zero error rate"
       ],
       color: "from-amber-500 to-orange-500"
+    },
+    {
+      title: "Auxide",
+      description: "Real-time-safe, deterministic audio graph kernel for building reliable audio tools, DSP chains, and synthesis engines with a focus on correctness, performance, and simplicity.",
+      icon: <Zap className="h-8 w-8" />,
+      stats: {
+        stars: 3,
+        forks: 1,
+        language: "Rust"
+      },
+      tags: ["Rust", "Audio", "Real-Time", "DSP", "Graph-Based", "Deterministic"],
+      status: "Production Ready",
+      githubUrl: "https://github.com/Michael-A-Kuykendall/auxide",
+      highlights: [
+        "Zero allocations in audio processing paths",
+        "Deterministic output for same inputs",
+        "Graph-based flexible audio processing",
+        "Extensible plugin architecture"
+      ],
+      color: "from-purple-500 to-indigo-500"
+    },
+    {
+      title: "Auxide-DSP",
+      description: "DSP nodes library for Auxide - ~40 RT-safe nodes including oscillators, filters, effects, dynamics, distortion, and utility functions. Complete toolkit for professional audio applications.",
+      icon: <Database className="h-8 w-8" />,
+      stats: {
+        stars: 1,
+        forks: 0,
+        language: "Rust"
+      },
+      tags: ["Rust", "DSP", "Audio Processing", "Real-Time Safe", "Synthesis", "Effects"],
+      status: "Production Ready",
+      githubUrl: "https://github.com/Michael-A-Kuykendall/auxide-dsp",
+      highlights: [
+        "~40 RT-safe DSP nodes implemented",
+        "Comprehensive audio processing toolkit",
+        "Verified zero allocations in process paths",
+        "200+ tests across ecosystem"
+      ],
+      color: "from-cyan-500 to-teal-500"
     }
   ];
 
@@ -340,13 +380,6 @@ const Projects = () => {
               </p>
               
               <div className="flex flex-wrap justify-center gap-4">
-                <Button variant="hero" size="lg" className="group" asChild>
-                  <a href="tel:+18722626499">
-                    <Phone className="mr-2 h-5 w-5" />
-                    Call (872) 262-6499
-                  </a>
-                </Button>
-                
                 <Button variant="hero" size="lg" className="group" asChild>
                   <a href="mailto:michaelallenkuykendall@gmail.com">
                     <Mail className="mr-2 h-5 w-5" />
