@@ -112,7 +112,7 @@ const About = () => {
                       </div>
                       <div className="flex items-center gap-2">
                         <Code className="h-4 w-4 text-primary" />
-                        <span className="text-sm">Secret Rust LLM Toolchain</span>
+                        <span className="text-sm">Secret Rust Inference Library</span>
                       </div>
                     </div>
                   </CardContent>
@@ -154,50 +154,50 @@ const About = () => {
           <div className="relative container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-                Notable Achievements
+                2025 Output — First Year on GitHub
               </h2>
               <p className="text-xl text-muted-foreground">
-                Building impactful software that developers love
+                Building impactful software at machine-level velocity
               </p>
             </div>
 
             <div className="grid md:grid-cols-4 gap-6">
               <Card className="text-center">
                 <CardContent className="p-6">
-                  <div className="text-3xl font-bold text-primary mb-2">3.5k+</div>
-                  <div className="text-lg font-semibold mb-2">GitHub Stars</div>
+                  <div className="text-3xl font-bold text-primary mb-2">3,782</div>
+                  <div className="text-lg font-semibold mb-2">Total Stars</div>
                   <div className="text-sm text-muted-foreground">
-                    Shimmy has attracted 3,500+ stars from developers worldwide
+                    Across all repositories in under 1 year
                   </div>
                 </CardContent>
               </Card>
 
               <Card className="text-center">
                 <CardContent className="p-6">
-                  <div className="text-3xl font-bold text-primary mb-2">542</div>
-                  <div className="text-lg font-semibold mb-2">Commits This Year</div>
+                  <div className="text-3xl font-bold text-primary mb-2">2,566</div>
+                  <div className="text-lg font-semibold mb-2">Commits</div>
                   <div className="text-sm text-muted-foreground">
-                    Active open source development with 15-day streak
+                    133 releases shipped, 83 PRs opened
                   </div>
                 </CardContent>
               </Card>
 
               <Card className="text-center">
                 <CardContent className="p-6">
-                  <div className="text-3xl font-bold text-primary mb-2">20+</div>
-                  <div className="text-lg font-semibold mb-2">Years Experience</div>
+                  <div className="text-3xl font-bold text-primary mb-2">2,800+</div>
+                  <div className="text-lg font-semibold mb-2">Contributions</div>
                   <div className="text-sm text-muted-foreground">
-                    Two decades of software engineering excellence
+                    Peak day: 182 contributions (Oct 9, 2025)
                   </div>
                 </CardContent>
               </Card>
 
               <Card className="text-center">
                 <CardContent className="p-6">
-                  <div className="text-3xl font-bold text-primary mb-2">Live</div>
-                  <div className="text-lg font-semibold mb-2">Production Systems</div>
+                  <div className="text-3xl font-bold text-primary mb-2">101</div>
+                  <div className="text-lg font-semibold mb-2">Repos Created</div>
                   <div className="text-sm text-muted-foreground">
-                    ContextLite serving enterprise clients
+                    20+ years experience, military precision
                   </div>
                 </CardContent>
               </Card>
@@ -223,10 +223,10 @@ const About = () => {
                 <div className="space-y-2">
                   <Badge variant="outline">🦀 Rust</Badge>
                   <Badge variant="outline">Go</Badge>
+                  <Badge variant="outline">Scala</Badge>
                   <Badge variant="outline">TypeScript</Badge>
                   <Badge variant="outline">Python</Badge>
                   <Badge variant="outline">PHP</Badge>
-                  <Badge variant="outline">C++</Badge>
                 </div>
               </div>
 

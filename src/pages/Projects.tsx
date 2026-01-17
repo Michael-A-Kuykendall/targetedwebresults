@@ -51,22 +51,22 @@ const Projects = () => {
     },
     {
       title: "CrabCamera",
-      description: "Professional Desktop Camera Studio - Complete v0.3.0 Tauri plugin with MediaFoundation controls, WebRTC preview, auto-capture quality validation. The invisible infrastructure that makes camera apps just work.",
+      description: "Professional Desktop Camera + Audio Plugin - v0.7.0 Tauri plugin with MediaFoundation controls, synchronized A/V recording, auto-capture quality validation. 163 tests, production ready.",
       icon: <Camera className="h-8 w-8" />,
       stats: {
         stars: 134,
         forks: 12,
         language: "Rust"
       },
-      tags: ["Rust", "Tauri", "Professional Controls", "Cross-Platform", "Production Ready", "63 Tests"],
-      status: "v0.3.0",
+      tags: ["Rust", "Tauri", "Professional Controls", "Cross-Platform", "Production Ready", "163 Tests"],
+      status: "v0.7.0",
       githubUrl: "https://github.com/Michael-A-Kuykendall/crabcamera",
       highlights: [
-        "Professional desktop camera controls",
-        "WebRTC live preview",
+        "Professional desktop camera + audio controls",
+        "Synchronized A/V recording with Muxide",
         "Quality validation automation",
-        "Cross-platform support",
-        "63 comprehensive tests"
+        "Cross-platform support (Windows/macOS/Linux)",
+        "163 comprehensive tests"
       ],
       color: "from-purple-500 to-pink-500"
     },
@@ -138,7 +138,7 @@ const Projects = () => {
       description: "Professional botanical cultivation database with AI-powered plant insights. Advanced data modeling for agriculture, greenhouse management, and botanical research.",
       icon: <Leaf className="h-8 w-8" />,
       stats: {
-        stars: 3,
+        stars: 10,
         forks: 0,
         language: "Rust"
       },
@@ -159,7 +159,7 @@ const Projects = () => {
       description: "Production-ready AI agent framework built in Rust delivering 10-100x performance improvements. DAG-based mission engine with universal workflow transpilation and enterprise compliance.",
       icon: <Zap className="h-8 w-8" />,
       stats: {
-        stars: 12,
+        stars: 17,
         forks: 3,
         language: "Rust"
       },
@@ -174,26 +174,6 @@ const Projects = () => {
         "748 comprehensive tests with zero error rate"
       ],
       color: "from-amber-500 to-orange-500"
-    },
-    {
-      title: "Auxide",
-      description: "Real-time-safe, deterministic audio graph kernel for building reliable audio tools, DSP chains, and synthesis engines with a focus on correctness, performance, and simplicity.",
-      icon: <Zap className="h-8 w-8" />,
-      stats: {
-        stars: 10,
-        forks: 1,
-        language: "Rust"
-      },
-      tags: ["Rust", "Audio", "Real-Time", "DSP", "Graph-Based", "Deterministic"],
-      status: "Production Ready",
-      githubUrl: "https://github.com/Michael-A-Kuykendall/auxide",
-      highlights: [
-        "Zero allocations in audio processing paths",
-        "Deterministic output for same inputs",
-        "Graph-based flexible audio processing",
-        "Extensible plugin architecture"
-      ],
-      color: "from-purple-500 to-indigo-500"
     },
     {
       title: "Auxide-DSP",

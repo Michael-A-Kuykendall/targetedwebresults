@@ -24,7 +24,7 @@ const ProjectsPreviewSection = () => {
       description: "Production-ready AI agent framework. 97% faster than Python with DAG-based workflows.",
       icon: <Zap className="h-6 w-6" />,
       stats: {
-        stars: 12,
+        stars: 17,
         forks: 3,
         language: "Rust"
       },
@@ -37,7 +37,7 @@ const ProjectsPreviewSection = () => {
       description: "Real-time-safe audio graph kernel. Zero allocations in processing paths, deterministic output.",
       icon: <Zap className="h-6 w-6" />,
       stats: {
-        stars: 3,
+        stars: 9,
         forks: 1,
         language: "Rust"
       },

@@ -53,16 +53,16 @@ const HeroSection = () => {
             {/* Key Stats */}
             <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-8 border-t border-border">
               <div className="text-center space-y-2">
-                <div className="text-xl sm:text-2xl font-bold text-primary">3.5k+</div>
+                <div className="text-xl sm:text-2xl font-bold text-primary">3.7k+</div>
                 <p className="text-xs sm:text-sm font-medium text-muted-foreground">GitHub Stars</p>
               </div>
               <div className="text-center space-y-2">
-                <div className="text-xl sm:text-2xl font-bold text-primary">Live</div>
-                <p className="text-xs sm:text-sm font-medium text-muted-foreground">Production Systems</p>
+                <div className="text-xl sm:text-2xl font-bold text-primary">2.8k+</div>
+                <p className="text-xs sm:text-sm font-medium text-muted-foreground">Contributions</p>
               </div>
               <div className="text-center space-y-2">
-                <div className="text-xl sm:text-2xl font-bold text-primary">20+</div>
-                <p className="text-xs sm:text-sm font-medium text-muted-foreground">Years Experience</p>
+                <div className="text-xl sm:text-2xl font-bold text-primary">133</div>
+                <p className="text-xs sm:text-sm font-medium text-muted-foreground">Releases Shipped</p>
               </div>
             </div>
           </div>
@@ -84,11 +84,11 @@ const HeroSection = () => {
                 {/* Terminal Content */}
                 <div className="p-6 font-mono text-sm space-y-2">
                   <div className="text-green-400">$ cargo build --release</div>
-                  <div className="text-gray-400">   Compiling shimmy v0.3.0</div>
+                  <div className="text-gray-400">   Compiling shimmy v1.9.0</div>
                   <div className="text-blue-400">   Finished release [optimized] target(s)</div>
                   <div className="text-gray-500 mt-4"></div>
                   <div className="text-green-400">$ ./shimmy --version</div>
-                  <div className="text-white">shimmy 0.3.0 - OpenAI Compatible Inference</div>
+                  <div className="text-white">shimmy 1.9.0 - OpenAI Compatible Inference</div>
                   <div className="text-gray-500 mt-4"></div>
                   <div className="text-green-400">$ git log --oneline -3</div>
                   <div className="text-yellow-300">a1b2c3d feat: 3.5k+ stars milestone</div>
