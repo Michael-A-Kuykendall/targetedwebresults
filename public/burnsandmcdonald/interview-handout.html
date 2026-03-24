@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burns &amp; McDonald Interview Follow-Up | SignalOps Demo Portal</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #0f172a;
+        --muted: #475569;
+        --line: #cbd5e1;
+        --surface: #f8fafc;
+        --accent: #0f766e;
+        --accent-soft: #d1fae5;
+        --sky-soft: #e0f2fe;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+        color: var(--ink);
+        background: #ffffff;
+      }
+
+      .page {
+        width: 8.5in;
+        min-height: 11in;
+        margin: 0 auto;
+        padding: 0.45in;
+        display: grid;
+        gap: 0.18in;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        margin-bottom: 0.12in;
+        padding: 0.08in 0.16in;
+        border-radius: 999px;
+        color: #ffffff;
+        background: #0f766e;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1.35fr 0.85fr;
+        gap: 0.18in;
+        align-items: start;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 28px;
+        line-height: 1;
+        letter-spacing: -0.04em;
+      }
+
+      .summary {
+        margin: 0.14in 0 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      .card {
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: var(--surface);
+        padding: 0.16in;
+      }
+
+      .card.accent {
+        background: linear-gradient(135deg, var(--sky-soft), var(--accent-soft));
+      }
+
+      .card-label,
+      .section-label {
+        display: block;
+        margin-bottom: 0.08in;
+        color: var(--muted);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .card strong {
+        display: block;
+        margin-bottom: 0.08in;
+        font-size: 15px;
+        line-height: 1.25;
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.45;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.16in;
+      }
+
+      .pipeline {
+        display: grid;
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        gap: 0.08in;
+      }
+
+      .pipeline span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 0.38in;
+        border-radius: 999px;
+        background: #eff6ff;
+        border: 1px solid #bfdbfe;
+        color: #1e3a8a;
+        font-size: 9px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 0 0.06in;
+      }
+
+      .footer {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.16in;
+      }
+
+      .routes {
+        color: var(--accent);
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div>
+          <span class="eyebrow">Burns &amp; McDonald Interview</span>
+          <h1>SignalOps Demo Portal</h1>
+          <p class="summary">
+            Built after comparing the role stack to my direct experience and choosing one project that would force me
+            to work through layered data shaping, experiment tracking, serving contracts, and frontend delivery in one place.
+          </p>
+        </div>
+
+        <div class="card accent">
+          <span class="card-label">What you can review here</span>
+          <strong>Masked demo data, working MLflow evidence, stable frontend contracts</strong>
+          <p>
+            Public identifiers and sensitive details are masked, but the architecture, experiment workflow, and UI
+            integration are real and directly inspectable.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <span class="section-label">Project Goal</span>
+        <strong>Build one artifact that demonstrates prioritization, data shaping, experiments, and UI delivery together.</strong>
+        <p>
+          Rather than describe the stack abstractly, I built a working artifact that shows how those concerns fit
+          together in a coherent product.
+        </p>
+      </section>
+
+      <section class="card">
+        <span class="section-label">Architecture</span>
+        <div class="pipeline">
+          <span>Source</span>
+          <span>Bronze</span>
+          <span>Silver</span>
+          <span>Gold</span>
+          <span>Experiments</span>
+          <span>Serving</span>
+          <span>Frontend</span>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <span class="card-label">System 1</span>
+          <strong>Lakehouse shaping</strong>
+          <p>
+            Preserves source truth, standardizes signal structure, and shapes stable analytical outputs through bronze,
+            silver, and gold layers.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="card-label">System 2</span>
+          <strong>Ranking and prioritization</strong>
+          <p>
+            Compresses a large signal set into a smaller explainable shortlist with priority score, tiering, and
+            review context.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="card-label">System 3</span>
+          <strong>Experiment lifecycle</strong>
+          <p>
+            Uses local MLflow runs, metrics, and best-run summaries so the project has a real experiment history rather
+            than a single notebook result.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="card-label">System 4</span>
+          <strong>Serving contracts</strong>
+          <p>
+            Narrows the public surface to stable summary, detail, replay, live-context, and model snapshot contracts so
+            the UI stays clean while research continues underneath.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="card-label">System 5</span>
+          <strong>Product interface</strong>
+          <p>
+            Presents the product as a usable React interface with landing, demo, architecture, model, and walkthrough
+            routes instead of requiring the reviewer to imagine the product shape.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="card-label">System 6</span>
+          <strong>Workflow orchestration</strong>
+          <p>
+            Tracks structured workflows, waits, and checkpoints so multi-step work stays durable and reviewable instead
+            of collapsing back into ad hoc notes.
+          </p>
+        </article>
+      </section>
+
+      <section class="grid">
+        <article class="card accent">
+          <span class="card-label">Role fit</span>
+          <strong>Built to exercise the role stack directly</strong>
+          <p>
+            The implementation is local-first, but it was intentionally designed to map to enterprise data platform,
+            experiment lifecycle, and business-facing application concerns.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="card-label">Scope boundary</span>
+          <strong>Real architecture and local evidence, with explicit limits</strong>
+          <p>
+            The project does not claim automated trading execution or enterprise ownership of every platform service. It
+            does claim a real layered system, a real experiment loop, and a real product interface built for review.
+          </p>
+        </article>
+      </section>
+
+      <section class="footer">
+        <article class="card">
+          <span class="card-label">Best follow-up URL</span>
+          <strong class="routes">/present</strong>
+          <p>Short reviewer walkthrough for the project story and scope.</p>
+        </article>
+
+        <article class="card">
+          <span class="card-label">Supporting routes</span>
+          <strong class="routes">/demo · /architecture · /model · /about</strong>
+          <p>Working UI, architecture breakdown, experiment evidence, and implementation notes.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
