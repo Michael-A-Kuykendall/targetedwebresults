@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Full static content for the Burns & McDonnell SignalOps Demo Portal interview follow-up site, including project rationale, architecture, experiment workflow, scope notes, and review routes."
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <title>Burns &amp; McDonnell Interview Follow-Up | Full Content</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #0f172a;
+        --muted: #475569;
+        --line: #cbd5e1;
+        --surface: #f8fafc;
+        --accent: #0f766e;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+        color: var(--ink);
+        background: #ffffff;
+      }
+
+      main {
+        width: min(1100px, calc(100vw - 2rem));
+        margin: 0 auto;
+        padding: 2rem 0 3rem;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.1;
+      }
+
+      h1 {
+        margin: 0 0 0.75rem;
+        font-size: clamp(2.2rem, 5vw, 3.5rem);
+      }
+
+      h2 {
+        margin: 0 0 0.75rem;
+        font-size: 1.6rem;
+      }
+
+      h3 {
+        margin: 0 0 0.5rem;
+        font-size: 1.05rem;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      section,
+      article,
+      nav {
+        margin-top: 1rem;
+        padding: 1.1rem 1.2rem;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: var(--surface);
+      }
+
+      .eyebrow {
+        display: inline-block;
+        margin-bottom: 0.75rem;
+        padding: 0.35rem 0.65rem;
+        border-radius: 999px;
+        color: #ffffff;
+        background: var(--accent);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      ul,
+      ol {
+        margin: 0;
+        padding-left: 1.25rem;
+      }
+
+      .route-list a {
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      @media (max-width: 760px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <span class="eyebrow">Burns &amp; McDonnell Interview</span>
+      <h1>SignalOps Demo Portal: Full Static Content</h1>
+      <p>
+        This static page exists so search engines, AI tools, and other crawlers can read the full interview follow-up
+        content without depending on client-side JavaScript or hash-based routes.
+      </p>
+
+      <section>
+        <h2>Project Rationale</h2>
+        <p>
+          SignalOps Demo Portal was built after comparing the target role stack to direct prior experience and choosing
+          one project that would force work across layered data shaping, experiment tracking, serving contracts, and a
+          reviewable frontend interface.
+        </p>
+        <p>
+          The objective is not to present isolated code samples. The objective is to show one coherent artifact that
+          demonstrates system judgment, interface judgment, and explicit scope discipline.
+        </p>
+      </section>
+
+      <section>
+        <h2>System Breakdown</h2>
+        <div class="grid">
+          <article>
+            <h3>Ingestion And Lakehouse Shaping</h3>
+            <p>Captures blockchain-derived artifacts and moves them through source, bronze, silver, and gold layers.</p>
+            <p>I built this to show that data work is being treated as a system rather than a set of one-off scripts.</p>
+          </article>
+          <article>
+            <h3>Ranking And Review Workflow</h3>
+            <p>Compresses a large signal set into a smaller explainable shortlist with tiering and score context.</p>
+            <p>The point is to demonstrate prioritization judgment, not just raw data collection.</p>
+          </article>
+          <article>
+            <h3>Experiment Tracking</h3>
+            <p>Uses MLflow-backed runs, metrics, and best-run summaries to compare ranking approaches over time.</p>
+            <p>The project has a reviewable experiment loop instead of a static scoring claim.</p>
+          </article>
+          <article>
+            <h3>Serving Contracts</h3>
+            <p>Narrows the public surface to stable summary, detail, replay, live-context, and model snapshot objects.</p>
+            <p>This demonstrates contract discipline and keeps the UI decoupled from raw internal structures.</p>
+          </article>
+          <article>
+            <h3>Product Interface</h3>
+            <p>Turns backend outputs into a reviewable React interface with landing, architecture, model, demo, and walkthrough routes.</p>
+            <p>It lets an interviewer inspect the product directly instead of inferring product judgment from backend code alone.</p>
+          </article>
+          <article>
+            <h3>Workflow Orchestration</h3>
+            <p>Tracks long-running workflows, waits, and checkpoints so multi-step work stays durable and reviewable.</p>
+            <p>This is how the project stayed operationally disciplined while being built across several layers at once.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Architecture</h2>
+        <ol>
+          <li>Source data is collected from blockchain-derived operational artifacts.</li>
+          <li>Bronze preserves source-faithful records and ingestion context.</li>
+          <li>Silver cleans, normalizes, deduplicates, and standardizes the signal shape.</li>
+          <li>Gold curates application-serving and model-serving outputs.</li>
+          <li>The experiment layer compares scoring and labeling approaches and tracks outcomes in MLflow.</li>
+          <li>The serving layer emits stable masked contracts for the frontend.</li>
+          <li>The frontend renders those contracts as ranked views, detail views, model context, and walkthrough screens.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Experiment Evidence</h2>
+        <p>
+          MLflow is wired in so the project has tracked runs, parameters, and metrics instead of a single hard-coded
+          result or one-off notebook snapshot.
+        </p>
+        <ul>
+          <li>Implemented today: local MLflow run tracking, repeatable outputs, best-run summary, and stored history.</li>
+          <li>Maps to the target stack: Databricks and enterprise model-lifecycle concerns without claiming full registry governance.</li>
+          <li>Not the claim of this project: a mature economic prediction engine or deployed real-time trading system.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Scope And Mapping</h2>
+        <div class="grid">
+          <article>
+            <h3>Implemented In This Build</h3>
+            <ul>
+              <li>Crypto-native product scope</li>
+              <li>Layered data flow across source, bronze, silver, gold, experiments, serving, and frontend</li>
+              <li>Local MLflow workflow</li>
+              <li>Masked public data contracts for stable frontend delivery</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Mapped To The Target Stack</h3>
+            <ul>
+              <li>Databricks as the execution and collaborative data platform layer</li>
+              <li>Delta Lake as the transactional layer behind bronze, silver, and gold</li>
+              <li>SPFx-style delivery as an enterprise-hosted business UI pattern</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Walkthrough Screens</h2>
+        <ol>
+          <li>Why I Built It: gap-driven project choice, end-to-end ownership, reviewable artifact instead of talking points.</li>
+          <li>Architecture: clear system boundaries, contract-driven serving, deliberate review-surface boundary.</li>
+          <li>Data Modeling: bronze preserves truth, silver normalizes structure, gold serves stable downstream use.</li>
+          <li>Ranking Surface: priority score, tiered shortlist, explainable output for review.</li>
+          <li>Experiment Evidence: working local MLflow, run comparison, lifecycle-oriented thinking.</li>
+          <li>Frontend And Contracts: stable UI contracts, reviewable product surface, clear boundary between UI and raw internals.</li>
+          <li>Target Stack Mapping: transferable architecture, explicit stack translation, production-aware thinking.</li>
+        </ol>
+      </section>
+
+      <nav class="route-list">
+        <h2>Static Review Routes</h2>
+        <ul>
+          <li><a href="/burnsandmcdonnell/">Interactive site entry</a></li>
+          <li><a href="/burnsandmcdonnell/interview-handout.html">Interview handout</a></li>
+          <li><a href="/burnsandmcdonnell/full-content.html">Full static content</a></li>
+          <li><a href="/burnsandmcdonnell/llms.txt">LLMs guide</a></li>
+        </ul>
+      </nav>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+Title: targetedwebresults.com
+
+Primary Burns interview follow-up page:
+- https://targetedwebresults.com/burnsandmcdonnell/
+
+Crawler-friendly Burns pages:
+- https://targetedwebresults.com/burnsandmcdonnell/full-content.html
+- https://targetedwebresults.com/burnsandmcdonnell/interview-handout.html
+- https://targetedwebresults.com/burnsandmcdonnell/llms.txt
+
+Notes:
+- The Burns & McDonnell interview site includes static pages specifically for search and AI scanning.
+- The interactive entry uses client-side routing, but the static pages above expose the same project story in crawlable HTML.

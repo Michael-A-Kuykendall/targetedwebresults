@@ -1,0 +1,19 @@
+Title: Burns & McDonnell Interview Follow-Up - SignalOps Demo Portal
+
+Summary:
+SignalOps Demo Portal is a project built to demonstrate layered data shaping, MLflow-backed experiment tracking, stable serving contracts, and a reviewable frontend surface in one interview artifact.
+
+Canonical public path:
+https://targetedwebresults.com/burnsandmcdonnell/
+
+Crawler-friendly pages:
+- Overview and full text: https://targetedwebresults.com/burnsandmcdonnell/full-content.html
+- Interview handout: https://targetedwebresults.com/burnsandmcdonnell/interview-handout.html
+- Interactive site entry: https://targetedwebresults.com/burnsandmcdonnell/
+
+Key topics:
+- Project rationale and role-fit mapping
+- Medallion-style data flow across source, bronze, silver, gold, experiments, serving, and frontend
+- Local MLflow experiment workflow and scoped interpretation
+- Masked public contracts and review-surface boundary
+- Frontend delivery and target-stack mapping
